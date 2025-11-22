@@ -4,6 +4,12 @@
 # 《自然语言处理入门》3.3.1 加载语料库
 # 配套书籍：http://nlp.hankcs.com/book.php
 # 讨论答疑：https://bbs.hankcs.com/
+
+import os
+import sys
+# 把项目根目录加入 sys.path，这样直接运行此脚本时也能 import tests.* 模块
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..')))
+
 from pyhanlp import *
 from tests.test_utility import test_data_path
 
